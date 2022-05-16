@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Red Store</title>
+    <title>Bán quần áo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +21,9 @@
             </div>
             <nav>
                 <ul id="menuItem">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="product.php">Product</a></li>
+                    <li><a href="account.php">Account</a></li>
                 </ul>
             </nav>
             <a href="cart.html"><img src="assets/cart.png" width="30px"></a>
@@ -48,10 +48,11 @@
                             <hr id="indicator">
                         </div>
 
-                        <form id="loginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
+                        <form action="includes/functions/login.php" method="post" id="loginForm">
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password" required>
+                            <button type="submit" name="login" class="btn">Login</button>
+                            <!-- <input type="submit" name="login" value="Submit"> -->
                             <a href="">Forgot password?</a>
                         </form>
 

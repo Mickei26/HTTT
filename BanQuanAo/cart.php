@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Red Store</title>
+    <title>Bán quần áo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +21,9 @@
             </div>
             <nav>
                 <ul id="menuItem">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="product.php">Product</a></li>
+                    <li><a href="account.php">Account</a></li>
                 </ul>
             </nav>
             <a href="cart.html"><img src="assets/cart.png" width="30px"></a>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Red Store</title>
+    <title>Bán quần áo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,37 +14,59 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="assets/logo.png" width="125px"></a>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuItem">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="product.php">Product</a></li>
+                        <!-- <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li> -->
+                        <li><a href="account.php">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="assets/cart.png" width="30px"></a>
+                <img src="assets/menu.png" class="menu-icon" onclick="menuOpen()">
+
             </div>
-            <nav>
-                <ul id="menuItem">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-            </nav>
-            <a href="cart.html"><img src="assets/cart.png" width="30px"></a>
-            <img src="assets/menu.png" class="menu-icon" onclick="menuOpen()">
-
+            <div class="row">
+                <div class="col-2">
+                    <h1>Change Your Workout <br>Routine!</h1>
+                    <p>Consistency is the key to Success. Consistent<br>hard work gains success. Greatness will come!
+                    </p>
+                    <a href="" class="btn">Explore Now &#10140;</a>
+                </div>
+                <div class="col-2">
+                    <img src="assets/image1.png">
+                </div>
+            </div>
         </div>
-
     </div>
 
+    <!-- CATEGORY -->
+    <div class="category">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="assets/category-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="assets/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="assets/category-3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- PRODUCT -->
     <div class="small-container">
-        <div class="row row-2">
-            <h2>All Products</h2>
-            <select>
-                <option>Default</option>
-                <option>Sort by Price</option>
-                <option>Sort by Popularity</option>
-                <option>Sort by Rating</option>
-            </select>
-        </div>
+        <h2 class="title">Best Seller</h2>
         <div class="row">
             <div class="col-4">
                 <a href="product-detail.html"><img src="assets/product-1.jpg"></a>
@@ -97,6 +119,8 @@
                 <p>$50.00</p>
             </div>
         </div>
+
+        <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
                 <img src="assets/product-5.jpg">
@@ -197,12 +221,92 @@
                 <p>$50.00</p>
             </div>
         </div>
-        <div class="page-btn">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>&#10140;</span>
+    </div>
+
+    <!-- OFFER-->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="assets/exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Special Offer Only At Red Store</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The Mi Band 4 features a 39.9% larger AMOLED color full-touch display with adjustable brightness.</small>
+                    <br><a href="" class="btn">Buy Now &#10140;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEW -->
+    <div class="review">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad officia odio voluptatem quaerat corporis facilis aliquam facere ducimus beatae, ipsa voluptatibus quos adipisci, excepturi ab quo? Minima harum perferendis saepe.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="assets/user-1.png" alt="">
+                    <h3>ABC</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad officia odio voluptatem quaerat corporis facilis aliquam facere ducimus beatae, ipsa voluptatibus quos adipisci, excepturi ab quo? Minima harum perferendis saepe.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="assets/user-2.png" alt="">
+                    <h3>ABC</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad officia odio voluptatem quaerat corporis facilis aliquam facere ducimus beatae, ipsa voluptatibus quos adipisci, excepturi ab quo? Minima harum perferendis saepe.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="assets/user-3.png" alt="">
+                    <h3>ABC</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRAND -->
+    <div class="brand">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="assets/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="assets/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="assets/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="assets/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="assets/logo-philips.png">
+                </div>
+            </div>
         </div>
     </div>
 
