@@ -17,16 +17,16 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="assets/logo.png" width="125px"></a>
+                <a href="index.php"><img src="assets/logo.png" width="125px"></a>
             </div>
             <nav>
                 <ul id="menuItem">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="product.php">Product</a></li>
+                    <li><a href="account.php">Account</a></li>
                 </ul>
             </nav>
-            <a href="cart.html"><img src="assets/cart.png" width="30px"></a>
+            <a href="cart.php"><img src="assets/cart.png" width="30px"></a>
             <img src="assets/menu.png" class="menu-icon" onclick="menuOpen()">
 
         </div>
